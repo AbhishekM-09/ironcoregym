@@ -1,0 +1,6 @@
+{
+  "name": "IronCore Fitness",
+  "description": "IronCore Fitness | Premium Gym & Personal Training - Modern high-converting luxury fitness website",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

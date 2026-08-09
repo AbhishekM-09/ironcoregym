@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #050505;
+  --color-brand-surface: #111111;
+  --color-brand-red: #E11D48;
+  --color-brand-red-hover: #BE123C;
+  --color-brand-muted: #A1A1AA;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E11D48;
+}
+
+/* Custom Styling Helpers */
+.glass-card {
+  background: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateZ(0);
+}
+
+.glass-nav {
+  background: rgba(5, 5, 5, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transform: translateZ(0);
+}
+
+.red-glow {
+  box-shadow: 0 0 25px -5px rgba(225, 29, 72, 0.35);
+}
+
+.red-glow-sm {
+  box-shadow: 0 0 15px -3px rgba(225, 29, 72, 0.25);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* GPU Hardware Acceleration Helper */
+.transform-gpu {
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}
+
+
